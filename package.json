@@ -8,8 +8,6 @@
         "dev": "electron .",
         "build": "electron-builder"
     },
-    "dependencies": {
-    },
     "keywords": [],
     "author": "",
     "description": "",
@@ -17,5 +15,10 @@
     "devDependencies": {
         "electron": "^33.0.2",
         "electron-builder": "^25.1.8"
+    },
+    "dependencies": {
+        "express": "^4.21.1",
+        "node-fetch": "^3.3.2",
+        "tmi.js": "^1.8.5"
     }
 }

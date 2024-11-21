@@ -1,6 +1,10 @@
 import pkg from 'electron';
 const { app, BrowserWindow } = pkg;
+import { accessToken, authServer } from '../twitch/twitchAuth.js';
 import path from 'path';
+import client from '../twitch/twitchBot.js';
+
+//console.log(process.env.HEROE_TOKEN);
 
 function createWindow() {
     const win = new BrowserWindow({
@@ -22,7 +26,7 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
-    createWindow();
+    //createWindow();
 
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) {
